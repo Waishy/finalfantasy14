@@ -2,8 +2,9 @@
 include './include/header.php'
 ?>
 
-
-
+<div class="contenu">
+Bonjour !
+</div>
 
 
 

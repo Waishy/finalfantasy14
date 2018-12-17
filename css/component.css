@@ -9,7 +9,9 @@
 html, body, .container, .scroller {
 	height: 100%;
 }
-
+li div{
+	width: 5rem;
+}
 .container {
 	position: relative;
 	overflow: hidden;

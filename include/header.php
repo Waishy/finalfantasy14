@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<link rel="stylesheet" href="css/index.css">
     <script src="js/modernizr.custom.js"></script>
   
 </head>
@@ -28,42 +29,42 @@
 					<h2>Menu Principal</h2>
 					<ul>
 						<li>
-							<a href="#"><i class="fas fa-home"></i> <span class="nav-menu">Accueil</span></a>
+							<a href="#"> <div class="nav-menu">Accueil</div><i class="fas fa-home"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="fas fa-user-ninja"></i></i> <span class="nav-menu">Membres</span></a>
+							<a href="#"> <div class="nav-menu">Membres</div><i class="fas fa-user-ninja"></i></a>
 						</li>
 						<li>
-							<a href="#"><i class="fas fa-book-dead"></i><span class="nav-menu">News
-								</span></a>
+							<a href="#"><div class="nav-menu">News
+</div><i class="fas fa-book-dead"></i></a>
 							<div class="mp-level">
 								<h2>News</h2>
 								<ul>
 									<li>
-										<a href="#"><i class="fas fa-archive"></i><span class="nav-menu">Archives
-											</span></a>
+										<a href="#"><div class="nav-menu">Archives
+</div><i class="fas fa-archive"></i></a>
 									</li>
 									<li>
-										<a href="#"><i class="far fa-newspaper"></i><span class="nav-menu">Actualités du Jeu
-											</span></a>
+										<a href="#"><div class="nav-menu">Actualités du Jeu
+</div><i class="far fa-newspaper"></i></a>
 									</li>
 									<li>
 
-										<a href="#"><i class="fas fa-bullhorn"></i><span class="nav-menu">Annonce
-											</span></a>
+										<a href="#"><div class="nav-menu">Annonce
+</div><i class="fas fa-bullhorn"></i></a>
 
 									</li>
 									<li>
-										<a href="#"><i class="fas fa-calendar-alt"></i><span class="nav-menu">Planning
-											</span></a>
+										<a href="#"><div class="nav-menu">Planning
+</div><i class="fas fa-calendar-alt"></i></a>
 									</li>
 								</ul>
 							</div>
 						</li>
-						<li><a href="#"><i class="far fa-images"></i><span class="nav-menu">Gallerie
-								</span></a></li>
-						<li><a href="#"><i class="fas fa-award"></i><span class="nav-menu">Recrutement
-								</span></a></li>
+						<li><a href="#"><div class="nav-menu">Gallerie
+</div><i class="far fa-images"></i></a></li>
+						<li><a href="#"><div class="nav-menu">Recrutement
+</div><i class="fas fa-award"></i></a></li>
 					</ul>
 				</div>
 			</nav>
