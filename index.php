@@ -1,11 +1,9 @@
 <?php 
 include './include/header.php'
 ?>
-
-<div class="contenu">
-Bonjour !
+<div class="main">
+Bonjour tout le monde
 </div>
-
 
 
 
