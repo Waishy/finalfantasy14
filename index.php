@@ -1,10 +1,18 @@
 <?php 
 include './include/header.php'
 ?>
-<div class="main">
+<div id="main">
 Bonjour tout le monde
-</div>
+<div class="page">
 
+</div>
+</div>
+<style>
+.page{
+    height: 500px;
+    background-color: white;
+}
+</style>
 
 
 <?php 
