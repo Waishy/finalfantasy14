@@ -1,18 +1,18 @@
-/* The side navigation menu */
+/*------------------ The side navigation menu ---------------------*/
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
     top: 0;
     left: 0;
     background: linear-gradient(180deg, rgba(255,255,240,1), rgba(255, 153, 0, 1), rgba(255,69,0,1), rgba(255,0,0,1), rgba(50,0,0,1), rgba(0,0,0,1)) ; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
   }
   
-  /* The navigation menu links */
+  
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -28,28 +28,92 @@
   span{
       display: inline-block;
   }
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
   
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
+
+span {
+    margin-right: 30%;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+}
+
+
+#main {
     transition: margin-left .5s;
     padding: 20px;
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+    
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+/*-------------------- Style de la page -----------------------*/
+body{
+    background: url(../images/back.png)
+}
+.page{
+    background-color: white;
+    height: 80rem;
+    margin-left: 10%;
+    margin-right: 20%;
+    border-radius: 5%;
+    box-shadow:10px 5px 5px 15px white;
+    opacity: 0.5;
+    margin-top: 5%;
+}
+
+/*------------------ API et autres -----------------------*/
+
+.marquee {
+    width:75rem;
+	line-height: 0,1px;
+	color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+left: 5rem;
+background: rgba(255,255,240,0.1)
+}
+.marquee p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25s linear infinite;
+}
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+.api{
+    position: absolute;
+    right:0.5rem;
+    top:4rem;
+    opacity: 0.9;
+}
+.header{
+    position: absolute;
+    top: 0;
+}
+.menu-button{
+
+}
