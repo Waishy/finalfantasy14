@@ -6,10 +6,11 @@
     z-index: 10000000000;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(255, 255, 240, 1), rgba(255, 153, 0, 1), rgba(255, 69, 0, 1), rgba(255, 0, 0, 1), rgba(50, 0, 0, 1), rgba(0, 0, 0, 1));
+    background: linear-gradient(180deg, rgba(48, 157, 177, 1),rgba(48, 157, 177, 1),rgba(48, 157, 177, 0.8),rgba(48, 157, 177, 0.6),rgba(48, 157, 177, 0.4),rgba(48, 157, 177, 0.2));
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
+    box-shadow: 2px 2px 15px 2px whitesmoke;
 }
 
 
@@ -65,9 +66,17 @@
 .compte img{
     height: 3.5rem;
 }
+.backhome{
+    position: fixed;
+    right: 10rem;
+    top:0.4rem;
+}
+.backhome img{
+    height: 3.5rem;
+}
 /*-------------------- Style de la page -----------------------*/
 body {
-    background: url(../images/back.png);
+    background: url(../images/45.png);
     background-size: 100% 100%;
     background-attachment: fixed;
 

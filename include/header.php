@@ -5,8 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test menu de la guilde</title>
+    <title>Drunken Chocobo</title>
     <meta name="description" content="" />
+    <link rel="shortcut icon" href="./images/loguilde.png" type="image/x-icon">
     <meta name="keywords" content="" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
@@ -45,5 +46,6 @@
     </div>
 	<i class="fas fa-bars" id="trigger" style="padding: 15px; font-size:2em;" onclick="openNav()"></i>   
 
-    <a class="compte" href="#"><img src="./images/wind-up_leader.png" alt="" srcset=""></a>
+    <a class="compte" href="#"><img src="./images/mael.png" alt="" srcset=""></a>
+    <a href="/index.php" class="backhome"><img src="./images/wind-up_leader.png" alt=""></a>
 	
