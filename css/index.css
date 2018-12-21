@@ -46,6 +46,7 @@
 
 #main {
     transition: margin-left .5s;
+    position: relative;
 }
 
 
@@ -96,7 +97,7 @@ body {
 /*------------------ API et autres -----------------------*/
 
 .marquee {
-    width: 63rem;
+    width: 62rem;
     line-height: 0, 1px;
     color: black;
     white-space: nowrap;
@@ -104,8 +105,8 @@ body {
     box-sizing: border-box;
     position: fixed;
     top: 0;
-    left: 5rem;
-    background: rgba(255, 255, 240, 0.1)
+    left: 6rem;
+    background: rgba(238, 135, 94, 0.1);
 }
 
 .marquee p {
