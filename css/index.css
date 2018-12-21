@@ -28,6 +28,7 @@
 .fa-bars {
     position: fixed;
     top: 0;
+    cursor: pointer;
 }
 
 .sidenav .closebtn {
@@ -37,7 +38,7 @@
     font-size: 36px;
     margin-left: 50px;
 }
-a i{
+.sidenav a i{
     float: right;
     margin-right: 10%;
 }
@@ -56,7 +57,14 @@ a i{
         font-size: 18px;
     }
 }
-
+.compte{
+    position: fixed;
+    right: 1rem;
+    top:0.4rem;
+}
+.compte img{
+    height: 3.5rem;
+}
 /*-------------------- Style de la page -----------------------*/
 body {
     background: url(../images/back.png);
@@ -70,7 +78,7 @@ body {
     height: 80rem;
     margin-left: 6%;
     margin-right: 17rem;
-    border-radius: 5%;
+    border-radius: 3%;
     box-shadow: 10px 5px 5px 15px white;
     opacity: 0.5;
     margin-top: 5rem;

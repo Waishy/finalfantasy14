@@ -40,7 +40,10 @@
         <a href="#">
             <span>Gallerie</span><i class="far fa-images"></i>
         </a><a href="#">
-            <span>Recrutement</span><i class="fas fa-award"></i>
+            <span>Recrutement</span><i class="fas fa-beer"></i>
         </a>
     </div>
 	<i class="fas fa-bars" id="trigger" style="padding: 15px; font-size:2em;" onclick="openNav()"></i>   
+
+    <a class="compte" href="#"><img src="./images/wind-up_leader.png" alt="" srcset=""></a>
+	
