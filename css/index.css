@@ -1,3 +1,7 @@
+*{
+    font-family: "Quicksand", sans-serif;
+}
+
 /*------------------ The side navigation menu ---------------------*/
 .sidenav {
     height: 100%;
@@ -10,7 +14,7 @@
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
-    box-shadow: 2px 2px 15px 2px whitesmoke;
+    
 }
 
 
@@ -21,7 +25,9 @@
     color: #272626;
     display: block;
     transition: 0.3s;
+
 }
+
 .sidenav a:hover {
     color: #f1f1f1;
 }
@@ -88,11 +94,41 @@ body {
     height: 80rem;
     margin-left: 6%;
     margin-right: 17rem;
-    border-radius: 3%;
+    border-radius: 1%;
     box-shadow: 10px 5px 5px 15px white;
-    opacity: 0.5;
+    opacity: 0.9;
     margin-top: 5rem;
 }
+
+/*------------------ Articles ---------------------*/
+.header_art{
+    text-align: center;
+    font-size: 5rem;
+    font-family: "Aclonica", cursive;
+    background: -webkit-linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.art-img{
+    height: 7em;
+}
+.article{
+    margin: 1%;
+    display: inline-flex;
+    width: 98%;
+    background: linear-gradient(120deg, #e4b271,#eebb77,#e0b57d)
+}
+.article p{
+    margin-left: 3%; 
+}
+
+
+
+
+
+
 
 /*------------------ API et autres -----------------------*/
 
