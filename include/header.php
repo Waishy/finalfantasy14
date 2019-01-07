@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Aclonica|Gloria+Hallelujah|Permanent+Marker|Press+Start+2P|Quicksand" rel="stylesheet">
+    <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="./js/menu.js"></script>
 
 </head>
@@ -22,26 +23,28 @@
 
 
 
+
     <div class="sidenav" id="mySidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <a href="#">
+        <a class="menu_link" href="#">
             <span>Accueil</span><i class="fas fa-home"></i>
         </a>
-        <a href="#">
+        <a class="menu_link" href="#">
             <span>Membres</span><i class="fas fa-user-ninja"></i>
         </a>
 
-        <a href="#">
+        <a class="menu_link" href="#">
             <span>News</span><i class="fas fa-book-dead"></i>
         </a>
 
-        <a href="#">
+        <a class="menu_link" href="#">
             <span>Planning</span><i class="fas fa-calendar-alt"></i>
         </a>
-        <a href="#">
+        <a class="menu_link" href="#">
             <span>Gallerie</span><i class="far fa-images"></i>
-        </a><a href="#">
+        </a>
+        <a class="menu_link" href="#">
             <span>Recrutement</span><i class="fas fa-beer"></i>
         </a>
     </div>
