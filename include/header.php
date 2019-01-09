@@ -19,7 +19,7 @@
 
 <body>
 
-
+<div id='filter'></div>
 
 
 
@@ -50,6 +50,5 @@
     </div>
 	<i class="fas fa-bars" id="trigger" style="padding: 15px; font-size:2em;" onclick="openNav()"></i>   
 
-    <a class="compte" href="#"><img src="./images/mael.png" alt="" srcset=""></a>
-    <a href="./index.php" class="backhome"><img src="./images/wind-up_leader.png" alt=""></a>
+    <a href="./index.php" class="backhome"><img src="./images/drunken.png" alt=""></a>
 	
