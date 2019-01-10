@@ -11,7 +11,7 @@ include './include/header.php'
         <div class="header_art">Bienvenue chez Drunken Chocobo</div>
         <br>
         <hr class="sep_title">
-        <div class="article">
+        <div class="article" onclick="scaleArt()">
             <img class="art-img" src="./images/mael.png" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, officia temporibus excepturi modi tempora unde eveniet? Dignissimos dolores inventore, ab temporibus, possimus iste, quas rem aliquam minus aspernatur accusamus necessitatibus.</p>
         </div>

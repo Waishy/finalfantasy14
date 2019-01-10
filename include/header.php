@@ -25,7 +25,7 @@
 
 
     <div class="sidenav" id="mySidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:void(0)" class="closebtn menu_link" onclick="closeNav()">&times;</a>
 
         <a class="menu_link" href="#">
             <span>Accueil</span><i class="fas fa-home"></i>
