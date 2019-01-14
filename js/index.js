@@ -6,30 +6,8 @@ $(document).ready(function() {
   var staggerTime = 150;
 
   var urls = [
-    "http://kirillkiyutin.com/img/nyc/nyc1.jpg",
-    "http://kirillkiyutin.com/img/nyc/nyc2.jpg",
-    "http://kirillkiyutin.com/img/nyc/nyc3.jpg",
-    "http://kirillkiyutin.com/img/nyc/nyc4.jpg",
-    "http://kirillkiyutin.com/img/nyc/nyc5.jpg",
-    "http://kirillkiyutin.com/img/london/london1.jpg",
-    "http://kirillkiyutin.com/img/london/london2.jpg",
-    "http://kirillkiyutin.com/img/london/london3.jpg",
-    "http://kirillkiyutin.com/img/madrid/madrid1.jpg",
-    "http://kirillkiyutin.com/img/madrid/madrid2.jpg",
-    "http://kirillkiyutin.com/img/madrid/madrid3.jpg",
-    "http://kirillkiyutin.com/img/beijing/beijing1.jpg",
-    "http://kirillkiyutin.com/img/beijing/beijing2.jpg",
-    "http://kirillkiyutin.com/img/beijing/beijing3.jpg",
-    "http://kirillkiyutin.com/img/moscow/moscow1.jpg",
-    "http://kirillkiyutin.com/img/moscow/moscow2.jpg",
-    "http://kirillkiyutin.com/img/moscow/moscow3.jpg",
-    "http://kirillkiyutin.com/img/sidney/sidney1.jpg",
-    "http://kirillkiyutin.com/img/sidney/sidney2.jpg",
-    "http://kirillkiyutin.com/img/sidney/sidney3.jpg",
-    "http://kirillkiyutin.com/img/tokyo/tokyo1.jpg",
-    "http://kirillkiyutin.com/img/tokyo/tokyo2.jpg",
-    "http://kirillkiyutin.com/img/tokyo/tokyo3.jpg",
-    "http://kirillkiyutin.com/img/la/la3.jpg"
+    "https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_landscape_photography_quest.jpg",
+    "./images/ffxiv_11102017_004516.png"
   ];
 
   var $gallery = $(".demo__gallery");
