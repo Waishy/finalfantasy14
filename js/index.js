@@ -1,15 +1,41 @@
 "use strict";
+//initialisation de la Fonction
 $(document).ready(function() {
 
   var rows = 4; //change this also in css
   var cols = 6; //change this also in css
   var staggerTime = 150;
-
+ 
+  //Selection des images a afficher dans la galerie
   var urls = [
-    "https://iso.500px.com/wp-content/uploads/2018/02/500px_blog_landscape_photography_quest.jpg",
-    "./images/ffxiv_11102017_004516.png"
+    "./images/screen/ffxiv_01092017_153745.png",
+    "./images/screen/ffxiv_02092017_212747.png",
+    "./images/screen/ffxiv_02112017_000310.png",
+    "./images/screen/ffxiv_03052018_175353.png",
+    "./images/screen/ffxiv_03072017_210616.png",
+    "./images/screen/ffxiv_05112017_233216.png",
+    "./images/screen/ffxiv_09112017_160454.png",
+    "./images/screen/ffxiv_11072017_210519.png",
+    "./images/screen/ffxiv_11102017_004516.png",
+    "./images/screen/ffxiv_11112017_000651.png",
+    "./images/screen/ffxiv_13112015_193940.png",
+    "./images/screen/ffxiv_15102017_131722.png",
+    "./images/screen/ffxiv_15122017_145251.png",
+    "./images/screen/ffxiv_17042018_082745.png",
+    "./images/screen/ffxiv_18062017_182731.png",
+    "./images/screen/ffxiv_19062017_005117.png",
+    "./images/screen/ffxiv_19062017_210805.png",
+    "./images/screen/ffxiv_22102017_212900.png",
+    "./images/screen/ffxiv_23062017_181755.png",
+    "./images/screen/ffxiv_26062017_203647.png",
+    "./images/screen/ffxiv_28062017_210516.png",
+    "./images/screen/ffxiv_28102017_183034.png",
+    "./images/screen/ffxiv_30082018_195656.png",
+    "./images/screen/ffxiv_31102017_202226.png",
+    
   ];
 
+  //Mise en place du CSS de la transition
   var $gallery = $(".demo__gallery");
   var $help = $(".demo__help");
   var partsArray = [];
@@ -19,6 +45,7 @@ $(document).ready(function() {
     }
   })();
 
+  //Lancement de l'animation de transition
   for (let row = 1; row <= rows; row++) {
     partsArray[row - 1] = [];
     for (let col = 1; col <= cols; col++) {
@@ -27,6 +54,7 @@ $(document).ready(function() {
     }
   }
 
+  
   var $parts = $(".demo__part");
   var $image = $(".demo__part-back-inner");
   var help = true;
@@ -35,6 +63,7 @@ $(document).ready(function() {
     $parts.find(".demo__part-front").eq(i).css("background-image", `url(${urls[i]})`);
   }
 
+  //selection des variables au clique et lancemet de la fonction
   $gallery.on("click", ".demo__part-front", function() {
 
     $image.css("background-image", $(this).css("background-image"));
@@ -43,7 +72,8 @@ $(document).ready(function() {
     let col = +$(this).closest(".demo__part").attr("col");
     waveChange(row, col);
   });
-
+  
+  //Retour a l'état initial
   $gallery.on("click", ".demo__part-back", function() {
     if (!isShowingBack()) return;
 
@@ -60,7 +90,7 @@ $(document).ready(function() {
     showFront(0, $parts.length);
     
   });
-  
+  //Fonction retour 
   function showFront(i, maxI) {
     if (i >= maxI) return;
     $parts.eq(i).addClass("show-front");

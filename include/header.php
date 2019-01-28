@@ -42,7 +42,7 @@
             <span>Planning</span><i class="fas fa-calendar-alt"></i>
         </a>
         <a class="menu_link" href="screen.php">
-            <span>Gallerie</span><i class="far fa-images"></i>
+            <span>Galerie</span><i class="far fa-images"></i>
         </a>
         <a class="menu_link" href="contact.php">
             <span>Recrutement</span><i class="fas fa-beer"></i>
