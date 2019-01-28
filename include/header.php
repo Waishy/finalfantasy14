@@ -44,7 +44,7 @@
         <a class="menu_link" href="screen.php">
             <span>Gallerie</span><i class="far fa-images"></i>
         </a>
-        <a class="menu_link" href="#">
+        <a class="menu_link" href="contact.php">
             <span>Recrutement</span><i class="fas fa-beer"></i>
         </a>
     </div>
