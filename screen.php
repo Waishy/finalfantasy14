@@ -3,7 +3,7 @@ include './include/header.php'
 ?>
  <body>
 
-  <div id="main"></div>
+  <div id="main">
       <div class="demo">
       <div class="demo__help">
         Choissisez une photo
@@ -11,7 +11,7 @@ include './include/header.php'
       <div class="demo__gallery">
       </div>  
     </div>
-  
+</div>
 
 <?php 
 include './include/footer.php'

@@ -12,8 +12,12 @@ include './include/header.php'
         <br>
         <hr class="sep_title">
         <div class="article" onclick="scaleArt()">
+        <div class="author">Auteur : <br><br> <div class="aut-name"><br> Waishy</div>  </div>
             <img class="art-img" src="./images/mael.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, officia temporibus excepturi modi tempora unde eveniet? Dignissimos dolores inventore, ab temporibus, possimus iste, quas rem aliquam minus aspernatur accusamus necessitatibus.</p>
+            <p>Petit news rapide pour vous annoncer la sortie prochaine de la deuxième partie du patch 4.5 avec de nombreuses nouveautés <br><br>
+        Fin de la relique, fin de l'épopée de Stormblood et nombreuses nouveautés pour finir en beauté cette extension et commencer a entammer la nouvelle <br><br>
+    Pour plus d'infos : <a href="https://fr.finalfantasyxiv.com/lodestone/">Le site officiel du jeu</a> </p>
+            <img src="./images/back.png" alt="" class="art-ilu">
         </div>
     </div>
     <iframe class="api" src="https://discordapp.com/widget?id=305349187669590017&theme=dark" width="225" height="400"

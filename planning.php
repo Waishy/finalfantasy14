@@ -1,7 +1,9 @@
 <?php 
 include './include/header.php'
 ?>
-<div id="main"></div>
+<div id="main">
+    
+</div>
 <?php 
 include './include/footer.php'
 ?>

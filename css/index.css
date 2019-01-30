@@ -54,6 +54,8 @@
 #main {
     transition: margin-left .5s;
     position: relative;
+    margin: 5.5%;
+    height: 100vh;
 }
 
 
@@ -84,10 +86,9 @@
 }
 /*-------------------- Style de la page -----------------------*/
 body {
-    background: url(../images/45.png);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-
+    
+    background-size: 100%; 
+    background: linear-gradient(180deg, #272626, #f12711, #f5af19) no-repeat fixed;
 }
 
 .page {
@@ -96,9 +97,15 @@ body {
     margin-left: 6%;
     margin-right: 17rem;
     border-radius: 1%;
-    box-shadow: 10px 5px 5px 15px white;
+    box-shadow: 0 5px 0 5px rgba(209, 212, 30, 0.4),
+              0 10px 0 10px rgba(209, 212, 30, 0.3),
+             0 15px 0 15px rgba(209, 212, 30, 0.2),
+             0 20px 0 20px rgba(209, 212, 30, 0.1),
+             0 25px 0 25px rgba(209, 212, 30, 0.05);
     opacity: 0.9;
     margin-top: 5rem;
+    padding: 5%;
+    border: 5px solid whitesmoke;
 }
 hr {
     overflow: visible;
@@ -122,16 +129,17 @@ hr:after {
     text-align: center;
     font-size: 5rem;
     font-family: "Aclonica", cursive;
-    background: -webkit-linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background: -webkit-linear-gradient(124deg, #ff2400, #ff2400, #e81d1d, #e81d1d,  #e8a81d, #e49c17, #e8a11d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
+ 
 
 .art-img{
     height: 7em;
 }
 .article{
+    position : relative;
     margin: 1%;
     display: inline-flex;
     width: 98%;
@@ -139,32 +147,89 @@ hr:after {
     box-shadow: 10px 5px 5px black;
 }
 .article p{
-    margin-left: 3%; 
+    margin-left: 3%;
+    font-size : 100%; 
+    padding: 2%;
+}
+.author{
+    position : absolute;
+    display: flex;
+    align-content: flex-end;
+    margin: 1%;
+    padding : 1.5%;
+    top : 50%;
+    border: 1px solid rgba(0,0,0,0.2)
+}
+.aut-name{
+    font-weight: bold;
+    font-size: 1.2rem;
+    position: absolute;
+}
+.art-ilu{
+    height: 100%;
+    width: 45%;
+    padding: 3%; 
 }
 
 
+/*------------------- Formulaire -------------------*/
 
-
-
-
+.formulaire{
+    
+    text-align: center;
+    background: rgba(235, 221, 221, 0.5);
+    border-radius:10px;
+    width:50%;
+    padding:2.5%;
+    position: absolute;
+    left: 25%;
+    top: -5%;
+    box-shadow: 5px 0 5px 5px #272626;
+    font-size: 120%;
+}
+input{
+    width: 80%;
+    margin:1.5%;
+    border-radius : 15px 15px 15px 15px;
+    padding: 2%;
+    box-shadow:2px 2px 1px 2px black;
+    border: 1.5px solid darkgoldenrod;
+}
+button{
+    padding: 1.5%;
+    margin: 1.5%;
+    box-shadow:2px 2px 1px 2px black;
+    border: 1.5px solid darkgoldenrod;
+}
+.formulaire p{
+    margin : 1%;
+}
+textarea{
+    width: 80%;
+    box-shadow:0 1px 2px 2px black;
+    border: 1.5px solid darkgoldenrod;
+}
 
 /*------------------ API et autres -----------------------*/
 
 .marquee {
-    width: 62rem;
-    line-height: 0, 1px;
+    width: 71.5%;
+    line-height: 0, 4px;
     color: black;
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
     position: fixed;
+    height: 5%;
     top: 0;
-    left: 6rem;
+    left: 7%;
+    color: #f1f1f1;
     background: rgba(238, 135, 94, 0.1);
 }
 
 .marquee p {
     display: inline-block;
+    margin-top : 1%;
     padding-left: 100%;
     animation: marquee 25s linear infinite;
 }
@@ -184,4 +249,24 @@ hr:after {
     right: 0.5rem;
     top: 4.5rem;
     opacity: 0.9;
+}
+
+/*----------- Responsive -----------*/
+
+@media screen and (max-width: 768px) {
+    .api{
+        display : none;
+    }
+    .marquee{
+        display : none;
+    }
+    .page{
+        font-size: 80%;
+        width : 80%;
+        position : fixed;
+    }
+    .header_art{
+        font-size: 350%;
+        margin-bottom: 5%;
+    }
 }

@@ -108,6 +108,7 @@ $(document).ready(function() {
     this.showing = "front";
   }
 
+  //animation de retournement des cartes
   function waveChange(rowN, colN) {
     if (rowN > rows || colN > cols || rowN <= 0 || colN <= 0) return;
     if (partsArray[rowN - 1][colN - 1].showing == "back") return;

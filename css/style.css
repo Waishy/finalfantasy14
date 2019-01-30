@@ -7,9 +7,7 @@
 .demo {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+  display: flex;  
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -20,8 +18,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: -webkit-linear-gradient(30deg, #5B5893, #2c2a49);
-  background: linear-gradient(60deg, #5B5893, #2c2a49);
 }
 .demo__gallery {
   width: 688px;
@@ -94,7 +90,6 @@
 .demo__part-back-inner {
   width: 680px;
   height: 452px;
-  background-image: url(http://kirillkiyutin.com/img/nyc/nyc1.jpg);
   background-size: cover;
   background-position: center;
   -webkit-backface-visibility: hidden;
@@ -236,4 +231,14 @@
 .show-front {
   -webkit-transform: none;
           transform: none;
+}
+
+/*-------- Responsive -----------*/
+
+@media screen and (max-width : 768px){
+  .demo{
+    width : 80%;
+    height: 80%;
+    top: 0;
+  }
 }
