@@ -36,8 +36,8 @@ $(document).ready(function() {
   ];
 
   //Mise en place du CSS de la transition
-  var $gallery = $(".demo__gallery");
-  var $help = $(".demo__help");
+  var $gallery = $(".gal__gallery");
+  var $help = $(".gal__help");
   var partsArray = [];
   var reqAnimFr = (function() {
     return window.requestAnimationFrame || function(cb) {
@@ -49,32 +49,32 @@ $(document).ready(function() {
   for (let row = 1; row <= rows; row++) {
     partsArray[row - 1] = [];
     for (let col = 1; col <= cols; col++) {
-      $gallery.append(`<div class="show-front demo__part demo__part-${row}-${col}" row="${row}" col="${col}"><div class="demo__part-back"><div class="demo__part-back-inner"></div></div><div class="demo__part-front"></div></div>`);
+      $gallery.append(`<div class="show-front gal__part gal__part-${row}-${col}" row="${row}" col="${col}"><div class="gal__part-back"><div class="gal__part-back-inner"></div></div><div class="gal__part-front"></div></div>`);
       partsArray[row - 1][col - 1] = new Part();
     }
   }
 
   
-  var $parts = $(".demo__part");
-  var $image = $(".demo__part-back-inner");
+  var $parts = $(".gal__part");
+  var $image = $(".gal__part-back-inner");
   var help = true;
 
   for (let i = 0; i < $parts.length; i++) {
-    $parts.find(".demo__part-front").eq(i).css("background-image", `url(${urls[i]})`);
+    $parts.find(".gal__part-front").eq(i).css("background-image", `url(${urls[i]})`);
   }
 
   //selection des variables au clique et lancemet de la fonction
-  $gallery.on("click", ".demo__part-front", function() {
+  $gallery.on("click", ".gal__part-front", function() {
 
     $image.css("background-image", $(this).css("background-image"));
 
-    let row = +$(this).closest(".demo__part").attr("row");
-    let col = +$(this).closest(".demo__part").attr("col");
+    let row = +$(this).closest(".gal__part").attr("row");
+    let col = +$(this).closest(".gal__part").attr("col");
     waveChange(row, col);
   });
   
   //Retour a l'état initial
-  $gallery.on("click", ".demo__part-back", function() {
+  $gallery.on("click", ".gal__part-back", function() {
     if (!isShowingBack()) return;
 
 
@@ -112,7 +112,7 @@ $(document).ready(function() {
   function waveChange(rowN, colN) {
     if (rowN > rows || colN > cols || rowN <= 0 || colN <= 0) return;
     if (partsArray[rowN - 1][colN - 1].showing == "back") return;
-    $(".demo__part-" + rowN + "-" + colN).removeClass("show-front");
+    $(".gal__part-" + rowN + "-" + colN).removeClass("show-front");
     partsArray[rowN - 1][colN - 1].showing = "back";
     setTimeout(function() {
       waveChange(rowN + 1, colN);

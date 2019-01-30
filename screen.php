@@ -4,11 +4,11 @@ include './include/header.php'
  <body>
 
   <div id="main">
-      <div class="demo">
-      <div class="demo__help">
+      <div class="gal">
+      <div class="gal__help">
         Choissisez une photo
       </div>
-      <div class="demo__gallery">
+      <div class="gal__gallery">
       </div>  
     </div>
 </div>
