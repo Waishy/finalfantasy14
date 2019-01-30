@@ -93,9 +93,9 @@ body {
 
 .page {
     background-color: white;
-    height: 80rem;
+    width: 75%;
     margin-left: 6%;
-    margin-right: 17rem;
+    margin-right: 15%;
     border-radius: 1%;
     box-shadow: 0 5px 0 5px rgba(209, 212, 30, 0.4),
               0 10px 0 10px rgba(209, 212, 30, 0.3),
@@ -127,7 +127,7 @@ hr:after {
 /*------------------ Articles ---------------------*/
 .header_art{
     text-align: center;
-    font-size: 5rem;
+    font-size: 450%;
     font-family: "Aclonica", cursive;
     background: -webkit-linear-gradient(124deg, #ff2400, #ff2400, #e81d1d, #e81d1d,  #e8a81d, #e49c17, #e8a11d);
     -webkit-background-clip: text;

@@ -1,7 +1,7 @@
 /*250px and add a black background color to body */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("main").style.marginLeft = "6%";
   $(".menu_link").fadeTo("slow", 1);
 }
 
@@ -10,7 +10,7 @@ function closeNav() {
   $(".menu_link").fadeTo("fast", 0);
   setTimeout(function(){
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("main").style.marginLeft = "6%";
 
   }, 700);
 
