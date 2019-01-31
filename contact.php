@@ -19,7 +19,7 @@ include './include/header.php'
     <input type="text" name="bière" /><br/>
     <p>Classe principale :</p>
     <input type="text" name="classe" /><br/>
-    <p>Addresse Mail :</p>
+    <p>Adresse Mail :</p>
     <input type="text" name="mail" /><br/> 
     <p>Petite présentation :</p>
     <textarea name="" id="" cols="50" rows="15"></textarea><br/>  

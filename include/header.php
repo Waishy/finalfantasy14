@@ -30,7 +30,7 @@
         <a class="menu_link" href="index.php">
             <span>Accueil</span><i class="fas fa-home"></i>
         </a>
-        <a class="menu_link" href="#">
+        <a class="menu_link" href="membre.php">
             <span>Membres</span><i class="fas fa-user-ninja"></i>
         </a>
 
