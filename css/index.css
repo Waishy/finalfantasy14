@@ -10,7 +10,7 @@
     z-index: 10000000000;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(48, 157, 177, 1),rgba(48, 157, 177, 1),rgba(48, 157, 177, 0.8),rgba(48, 157, 177, 0.6),rgba(48, 157, 177, 0.4),rgba(48, 157, 177, 0.2));
+    background: linear-gradient(180deg, rgb(29, 0, 0),rgb(73, 0, 0, 0.9),rgba(136, 43, 0, 0.8),rgba(255, 94, 0, 0.6),rgb(255, 104, 16, 0.4),rgb(189, 160, 0, 0.2));
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -22,14 +22,14 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #272626;
+    color: #ffffff;
     display: block;
     transition: 1s;
     opacity: 0;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #777777;
 }
 
 .fa-bars {
@@ -92,7 +92,7 @@ body {
 }
 
 .page {
-    background-color: white;
+    background-color: rgb(255, 231, 163);
     width: 75%;
     margin-left: 6%;
     margin-right: 15%;
