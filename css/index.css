@@ -319,4 +319,13 @@ textarea{
         font-size: 350%;
         margin-bottom: 5%;
     }
+    .fa-bars{
+        z-index : 99999;
+    }
+    .art-ilu{
+        display: none;
+    }
+    .aut-name{
+        font-size: 100%;
+    }
 }
