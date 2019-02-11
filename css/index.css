@@ -56,9 +56,11 @@
     transition: margin-left .5s;
     position: relative;
     margin: 5.5%;
-    height: 100vh;
+    /* height: 100vh; */
 }
-
+.test{
+    padding: 150px;
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -147,9 +149,10 @@ hr:after {
 }
 .article{
     position : relative;
-    margin: 1%;
-    display: inline-flex;
-    width: 98%;
+    margin-left: 15%;
+    margin-bottom: 10%;
+    /* display: inline-flex; */
+    width: 800px;
     background: linear-gradient(120deg, #e4b271,#eebb77,#e0b57d);
     box-shadow: 10px 5px 5px black;
 }
