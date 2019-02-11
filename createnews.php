@@ -1,23 +1,33 @@
 <?php 
-include './include/header.php'
+include './include/header.php';
 ?>
 
 <style>
-
+.titrenews{
+    color : white;
+    text-align: center;
+}
+.contenunews{
+    color: white;
+    text-align: center;
+}
+.subbutton{
+    text-align: center; 
+}
 
 </style>
 <div id="main">
-<form action="index.php?action=addComment&amp;id=<?= $post['id'] ?>" method="post">
-            <div>
+<form action="#" method="POST">
+            <div class="titrenews">
                 <label for="title">Titre</label><br />
                 <input type="text" id="title" name="title" />
             </div>
-            <div>
+            <div class="contenunews">
                 <label for="content">Contenu</label><br />
-                <textarea id="content" name="content"></textarea>
+                <textarea id="content" name="content" wrap="off" cols="30" rows="30"></textarea>
             </div>
-            <div>
-               <button type="submit">envoyer</button>
+            <div class="subbutton">
+               <button type="submit">Poster</button>
             </div>
         </form>
 
@@ -38,11 +48,16 @@ include './include/header.php'
             if(empty($errors)){
                 require './include/db.php';
         
-                $req = $db->prepare('INSERT INTO news SET content = ?, title = ?, creation_date = NOW()');
+                $req = $pdo->prepare('INSERT INTO news SET title = ?, content = ?, creation_date = NOW()');
                 $req->execute([$_POST['title'],$_POST['content']]);
+                header('./index.php');
             }
               }
               else{
-                  $errors;
+                  $errors = array();
               }
         ?>
+
+<?php
+include './include/footer.php';
+?>

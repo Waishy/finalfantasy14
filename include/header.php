@@ -47,6 +47,9 @@
         <a class="menu_link" href="contact.php">
             <span>Recrutement</span><i class="fas fa-beer"></i>
         </a>
+        <a class="menu_link" href="contact.php">
+            <span>S'inscrire</span><i class="fas fa-beer"></i>
+        </a>
     </div>
 	<i class="fas fa-bars" id="trigger" style="padding: 15px; font-size:2em;" onclick="openNav()"></i>   
 

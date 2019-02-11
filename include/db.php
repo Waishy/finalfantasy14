@@ -1,13 +1,4 @@
 <?php 
-
-function dbConnect(){
-        try
-        {
-            $db = new PDO('mysql:host=localhost;dbname=finalfantasy;charset=utf8', 'root', '');
-            return $db;
-        }
-        catch(Exception $e)
-        {
-            die('Erreur : '.$e->getMessage());
-        }
-    }
+$pdo = new PDO ('mysql:dbname=finalfantasy;host=localhost', 'root', '');
+$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
