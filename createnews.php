@@ -1,40 +1,7 @@
 <?php 
 include './include/header.php';
 ?>
-
-<style>
-.titrenews{
-    color : white;
-    text-align: center;
-}
-.contenunews{
-    color: white;
-    text-align: center;
-}
-.subbutton{
-    text-align: center; 
-}
-
-</style>
-<div id="main">
-<form action="#" method="POST">
-            <div class="titrenews">
-                <label for="title">Titre</label><br />
-                <input type="text" id="title" name="title" />
-            </div>
-            <div class="contenunews">
-                <label for="content">Contenu</label><br />
-                <textarea id="content" name="content" wrap="off" cols="30" rows="30"></textarea>
-            </div>
-            <div class="subbutton">
-               <button type="submit">Poster</button>
-            </div>
-        </form>
-
-        </div>
-
-
-        <?php
+<?php
         
         if (!empty($_POST)){
             $errors = array();
@@ -54,9 +21,55 @@ include './include/header.php';
             }
               }
               else{
-                  $errors = array();
+                  $errors['formulaire'] = 'Veuillez renseigner les champs';
               }
         ?>
+<style>
+.titrenews{
+    color : white;
+    text-align: center;
+}
+.contenunews{
+    color: white;
+    text-align: center;
+}
+.subbutton{
+    text-align: center; 
+}
+.errortest{
+    background: white;
+    border : black 1px solid;
+    width: 25%;
+    border-radius : 2%;
+    padding : 2%;
+}
+
+</style>
+<div id="main">
+<form action="#" method="POST">
+<?php if (isset($errors)){
+    foreach ($errors as $message){
+        echo "<p class='errortest'>$message</p>";
+    }
+}
+?>
+            <div class="titrenews">
+                <label for="title">Titre</label><br />
+                <input type="text" id="title" name="title" />
+            </div>
+            <div class="contenunews">
+                <label for="content">Contenu</label><br />
+                <textarea id="content" name="content" wrap="off" cols="30" rows="30"></textarea>
+            </div>
+            <div class="subbutton">
+               <button type="submit">Poster</button>
+            </div>
+        </form>
+
+        </div>
+
+
+        
 
 <?php
 include './include/footer.php';
