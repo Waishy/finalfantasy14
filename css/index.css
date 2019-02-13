@@ -278,6 +278,48 @@ textarea{
     .cardtxt{
         margin: 20%;
     }
+
+/* ----------------- Création de news ----------------------*/
+.titrenews{
+    color : white;
+    text-align: center;
+}
+.contenunews{
+    color: white;
+    text-align: center;
+}
+.subbutton{
+    text-align: center; 
+}
+.errortest{
+    background: white;
+    border : black 1px solid;
+    width: 25%;
+    border-radius : 2%;
+    padding : 2%;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 35%;
+}
+
+/*------------------ Inscription --------------------------*/
+.insinput{
+    text-align: center;
+    width: 100%;
+    margin: 2%;
+}
+.insinput label{
+    margin-left: 5%;
+}
+.inscript{
+    margin : 5%;
+    text-align: center;
+}
+.title-content{
+    color: white;
+    text-align: center;
+}
 /*------------------ API et autres -----------------------*/
 
 .marquee {
@@ -325,13 +367,19 @@ textarea{
     .api{
         display : none;
     }
+    #galerie{
+        display: none;
+    }
     .marquee{
         display : none;
     }
+    .formulaire{
+        width: 75%;
+    }
     .page{
-        font-size: 80%;
+        font-size: 60%;
         width : 80%;
-        position : fixed;
+        margin-right: 85%;
     }
     .header_art{
         font-size: 350%;
@@ -346,4 +394,22 @@ textarea{
     .aut-name{
         font-size: 100%;
     }
+    .article{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .page{
+        margin-left: 4%;
+    }
+    .marquee{
+        width: 66%;
+    }
+    .article{
+        margin-left: 8%;
+    }
+    .formulaire{
+       margin-top: 10%;
+    }
+
 }

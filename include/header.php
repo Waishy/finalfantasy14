@@ -34,21 +34,15 @@
             <span>Membres</span><i class="fas fa-user-ninja"></i>
         </a>
 
-        <a class="menu_link" href="#">
+        <a class="menu_link" href="news.php">
             <span>News</span><i class="fas fa-book-dead"></i>
         </a>
 
-        <a class="menu_link" href="#">
-            <span>Planning</span><i class="fas fa-calendar-alt"></i>
-        </a>
-        <a class="menu_link" href="screen.php">
+        <a class="menu_link" href="screen.php" id="galerie">
             <span>Galerie</span><i class="far fa-images"></i>
         </a>
         <a class="menu_link" href="contact.php">
             <span>Recrutement</span><i class="fas fa-beer"></i>
-        </a>
-        <a class="menu_link" href="contact.php">
-            <span>S'inscrire</span><i class="fas fa-beer"></i>
         </a>
     </div>
 	<i class="fas fa-bars" id="trigger" style="padding: 15px; font-size:2em;" onclick="openNav()"></i>   

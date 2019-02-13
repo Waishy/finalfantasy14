@@ -1,5 +1,7 @@
-<?php 
+<?php session_start();
+require './include/functions.php';
 include './include/header.php';
+logged_only();
 ?>
 <?php
         
@@ -25,24 +27,7 @@ include './include/header.php';
               }
         ?>
 <style>
-.titrenews{
-    color : white;
-    text-align: center;
-}
-.contenunews{
-    color: white;
-    text-align: center;
-}
-.subbutton{
-    text-align: center; 
-}
-.errortest{
-    background: white;
-    border : black 1px solid;
-    width: 25%;
-    border-radius : 2%;
-    padding : 2%;
-}
+
 
 </style>
 <div id="main">
