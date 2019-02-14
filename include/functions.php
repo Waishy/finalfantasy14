@@ -28,7 +28,7 @@ function admin_only(){
   
   
     $_SESSION['flash']['danger'] = "Vous n'avez pas le droit d'acceder à cette page ";
-    header("location: ../adminroot.php");
+    header("location: adminroot.php");
     exit;
    }
 }

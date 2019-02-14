@@ -1,7 +1,8 @@
-<?php session_start();
+<?php 
+session_start();
 require './include/functions.php';
 include './include/header.php';
-logged_only();
+admin_only();
 ?>
 <?php
         
@@ -19,17 +20,14 @@ logged_only();
         
                 $req = $pdo->prepare('INSERT INTO news SET title = ?, content = ?, creation_date = NOW()');
                 $req->execute([$_POST['title'],$_POST['content']]);
-                header('./index.php');
+                $errors['message'] = 'message enregistré';
             }
               }
               else{
                   $errors['formulaire'] = 'Veuillez renseigner les champs';
               }
         ?>
-<style>
 
-
-</style>
 <div id="main">
 <form action="#" method="POST">
 <?php if (isset($errors)){

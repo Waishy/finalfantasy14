@@ -59,11 +59,12 @@ $(document).ready(function() {
   var $image = $(".gal__part-back-inner");
   var help = true;
 
+  // Attribution des images a chaques cartes
   for (let i = 0; i < $parts.length; i++) {
     $parts.find(".gal__part-front").eq(i).css("background-image", `url(${urls[i]})`);
   }
 
-  //selection des variables au clique et lancemet de la fonction
+  //selection des variables au clique et lancemet de la fonction qui modifie le dessous des cartes
   $gallery.on("click", ".gal__part-front", function() {
 
     $image.css("background-image", $(this).css("background-image"));

@@ -298,8 +298,8 @@ textarea{
     border-radius : 2%;
     padding : 2%;
     text-align: center;
-    position: absolute;
-    right: 0;
+    position: relative;
+    bottom : 0;
     top: 35%;
 }
 
@@ -366,9 +366,6 @@ textarea{
 @media screen and (max-width: 768px) {
     .api{
         display : none;
-    }
-    #galerie{
-        display: none;
     }
     .marquee{
         display : none;
