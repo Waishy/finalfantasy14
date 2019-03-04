@@ -3,6 +3,16 @@
 }
 
 /*------------------ The side navigation menu ---------------------*/
+.filter{
+ background-color: black;
+ height : 3.5rem;
+ border: black solid 1px;
+ width : 100%;
+ position: fixed;
+ top: 0;
+ z-index: 10000000;
+}
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -149,10 +159,10 @@ hr:after {
 }
 .article{
     position : relative;
-    margin-left: 15%;
+    margin-left: 14%;
     margin-bottom: 10%;
     /* display: inline-flex; */
-    width: 500px;
+    width: 75%;
     background: linear-gradient(120deg, #e4b271,#eebb77,#e0b57d);
     box-shadow: 10px 5px 5px black;
 }
@@ -160,6 +170,7 @@ hr:after {
     margin-left: 3%;
     font-size : 100%; 
     padding: 8%;
+    text-align: center;
 }
 h2{
     text-align: center;
@@ -327,14 +338,14 @@ textarea{
     line-height: 0, 4px;
     color: black;
     white-space: nowrap;
-    overflow: hidden;
     box-sizing: border-box;
     position: fixed;
     height: 5%;
-    top: 0;
+    top: 0.5%;
     left: 7%;
     color: #f1f1f1;
-    background: rgba(238, 135, 94, 0.1);
+    overflow: hidden;
+    z-index: 10000001;
 }
 
 .marquee p {
@@ -357,7 +368,7 @@ textarea{
 .api {
     position: fixed;
     right: 0.5rem;
-    top: 4.5rem;
+    top: 6rem;
     opacity: 0.9;
 }
 

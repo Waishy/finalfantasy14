@@ -11,7 +11,7 @@ include './include/header.php'
         <div class="header_art">Bienvenue chez Drunken Chocobo</div>
         <br>
         <hr class="sep_title">
-        <div class="article" onclick="scaleArt()">
+        <div class="article">
         <h3 class="title">Ouverture du site</h3>
             <img class="art-img" src="./images/mael.png" alt="">
             <p>Petit news rapide pour vous annoncer la sortie prochaine de la deuxième partie du patch 4.5 avec de nombreuses nouveautés <br><br>

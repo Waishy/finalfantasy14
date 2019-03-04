@@ -2,7 +2,6 @@
 session_start();
 require './include/functions.php';
 include './include/header.php';
-admin_only();
 ?>
 <?php
         

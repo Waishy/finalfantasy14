@@ -19,7 +19,7 @@
 
 <body>
 
-<div id='filter'></div>
+
 
 
 
@@ -45,7 +45,8 @@
             <span>Recrutement</span><i class="fas fa-beer"></i>
         </a>
     </div>
+    <div class='filter'>
 	<i class="fas fa-bars" id="trigger" style="padding: 15px; font-size:2em;" onclick="openNav()"></i>   
 
     <a href="./index.php" class="backhome"><img src="./images/drunken.png" alt=""></a>
-	
+	</div>

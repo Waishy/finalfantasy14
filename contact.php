@@ -6,7 +6,7 @@ include './include/header.php'
 <div class="formulaire">
 
 
-    <form method="post" action="#">
+    <form method="post" action="mailto">
      <p>Pseudo :</p>
     <input type="text" name="Pseudo" /><br/>
     <p>Monde :</p>
