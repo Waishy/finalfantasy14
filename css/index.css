@@ -563,6 +563,57 @@ display: flex;
     .article{
         width: 80%;
     }
+    .archive a{
+        font-size: 100%;
+    }
+    .img_serv{
+        display : none;
+    }
+    .range{
+        display: block;
+        position: absolute;
+        top: 10rem;
+    }
+    .range-2{
+        display: block;
+        position: absolute;
+        top: 55rem;
+    }
+    .range-3{
+        display: block;
+        position: absolute;
+        top:104rem;
+    }
+    .range-4{
+        display: block;
+        position: absolute;
+        top:141.25rem;
+    }
+    .range-5{
+        display: block;
+        position: absolute;
+        top:178.65rem;
+    }
+    .rankhead{
+        position: absolute;
+        top: 3rem;
+        width: 33%;
+        margin-left:35%;
+    }
+    .rankofficer{
+        position: absolute;
+        top: 50rem;
+        width: 50%;
+        margin-left: 28%;
+    }
+    .rankmember{
+        position: absolute;
+        top:95rem;
+        width:25%;
+    }
+    .membre{
+        margin-left:-13%;
+    }
 }
 @media screen and (max-width: 1024px){
     .page{

@@ -235,8 +235,9 @@
 
 @media screen and (max-width : 768px){
   .gal_gallery{
-    width : 350px;
-    height: 500px;
-    top: 0;
+    width : 250px;
+    height: 250px;
+    margin-top: 25%;
+    padding: 1px;
   }
 }

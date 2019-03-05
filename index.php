@@ -28,8 +28,7 @@ require_once('index.php');
         </div>
         <div class='morenews'><a href="news.php">Plus de news --></a></div>
     </div>
-    <iframe class="api" src="https://discordapp.com/widget?id=305349187669590017&theme=dark" width="225" height="400"
-        allowtransparency="true" frameborder="0"></iframe>
+    <iframe class="api" src="https://discordapp.com/widget?id=551391527956643840&theme=dark" width="225" height="400" allowtransparency="true" frameborder="0"></iframe>
 
     <div class="img_serv"><a href="./membre.php"><img src="./images/moogle.png" alt="serveur"></a></div>
     <?php if($showcookie) { ?>
