@@ -26,6 +26,7 @@ include './include/header.php'
     <button type="submit">Envoyer</button>
      
     </form>
+    <div class="img_serv"><a href="./membre.php"><img src="./images/moogle.png" alt="serveur"></a></div>
 </div>
 </div>
 

@@ -112,6 +112,28 @@
 .createarea{
     margin: 2%;
 }
+
+/*--------------------- Mentions Légales ----------------------*/
+
+.mentions-legales {
+    text-align: center;
+    text-decoration: none;
+}
+
+.mentions-legales p {
+    margin: 2%;
+}
+
+.mentions-legales h3 {
+    text-align: left;
+    font-style: italic;
+    margin: 2%;
+}
+.mentions-legales h2{
+    margin: 2%;
+    padding: 2%;
+}
+
 /*-------------------- Style de la page -----------------------*/
 body {
     
