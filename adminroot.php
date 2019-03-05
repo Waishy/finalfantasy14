@@ -1,5 +1,6 @@
 <?php
 require_once './include/functions.php';
+session_start();
 if(isset($_SESSION['auth'])){
     header('createnews.php');
         exit();

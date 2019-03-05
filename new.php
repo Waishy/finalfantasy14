@@ -9,7 +9,7 @@ while ($data = $req->fetch()):
 </h3>      
             <img class="art-img" src="./images/mael.png" alt="">
         
-                <?= ($data->content) ?> <a href="https://fr.finalfantasyxiv.com/lodestone/">Le site officiel du jeu</a>
+                <p><?= ($data->content) ?> <a href="https://fr.finalfantasyxiv.com/lodestone/">Le site officiel du jeu</a></p>
             
            <img src="./images/back.png" alt="" class="art-ilu">
         </div>

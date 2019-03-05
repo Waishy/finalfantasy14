@@ -97,6 +97,21 @@
 .backhome img{
     height: 8rem;
 }
+
+/*--------------------- création -----------------------*/
+.createtitle{
+    font-weight: bold;
+    font-size: 150%;
+    padding: 5%;
+}
+.createcontent{
+    font-weight: bold;
+    font-size: 150%;
+    padding: 5%;
+}
+.createarea{
+    margin: 2%;
+}
 /*-------------------- Style de la page -----------------------*/
 body {
     
@@ -136,6 +151,11 @@ hr:after {
     font-size: 1em;
     padding: 0 0 0.25em;
 }
+.img_serv{
+    position: fixed;
+    top: 32rem;
+    right: 0.6rem;
+}
 /*------------------ Articles ---------------------*/
 .header_art{
     text-align: center;
@@ -144,15 +164,16 @@ hr:after {
     background: -webkit-linear-gradient(124deg, #ff2400, #ff2400, #e81d1d, #e81d1d,  #e8a81d, #e49c17, #e8a11d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    padding-bottom: 5%;
 }
  
 .title{
     text-align:center;
     position: absolute;
     padding: 2%;
-    top: 0;
+    top: 5%;
     right: 0;
-    left: 25%;
+    left: 5%;
 }
 .art-img{
     height: 7em;
@@ -168,7 +189,7 @@ hr:after {
 }
 .article p{
     margin-left: 3%;
-    font-size : 100%; 
+    font-size : 150%; 
     padding: 8%;
     text-align: center;
 }
@@ -196,11 +217,38 @@ h2{
 .art-ilu{
   width: 80%;
   height: 80%;
-  margin-top: 7.5%;
+  margin-top: 1%;
   margin-left: 10%;
+  margin-bottom: 5%;
 }
-
-
+.morenews{
+  text-align: end;
+}
+.archive  {
+    width: 15%;
+    height: 55%;
+    background-color: rgb(255, 231, 163);
+    border: white solid 1px;
+    box-shadow: white 1px 1px 1px 1px;
+    position: fixed;
+    top : 25%;
+    right: 0;
+    border-radius: 15% 0 0 15%;
+}
+.archive a{
+    display: block;
+    font-size: 150%;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: 15%;
+    text-decoration: none;
+    color: black;
+    transition-duration: 0.2s;
+}
+.archive a:hover{
+    color: #777777;
+    transform: scale(1.1)
+}
 /*------------------- Formulaire -------------------*/
 
 .formulaire{
@@ -274,11 +322,40 @@ textarea{
     transform: rotateY(180deg);
     border: 2px solid black;
   }
-  .membre{
+  .range{
       position: absolute;
-      top: 15%;
-      left: 15%;
-    }
+      top: 5rem;
+      left: 13rem;
+display: flex;
+  }
+  .range-2{
+    position: absolute;
+    top: 25rem;
+    left: 13rem;
+    display: flex;
+  }
+  .range-3{
+    position: absolute;
+    top: 45rem;
+    left: 13rem;
+    display: flex;
+  }
+  .range-4{
+    position: absolute;
+    top: 60rem;
+    left: 13rem;
+    display: flex;
+  }
+  .range-5{
+    position: absolute;
+    top: 75rem;
+    left: 13rem;
+    display: flex;
+  }
+ .membre{
+  margin-left: 5%;
+  margin-right: 5%;
+ }
 
 
     .mbilu{
@@ -287,9 +364,39 @@ textarea{
     }
 
     .cardtxt{
-        margin: 20%;
+        padding: 5%;
     }
-
+.rankhead{
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center;
+    margin-left: 40%;
+    font-size: 2rem;
+    border: 5px solid black;
+    background: linear-gradient(yellow, brown);
+}
+.rankofficer{
+    position: absolute;
+    top: 20rem;
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center;
+    margin-left: 40%;
+    font-size: 2rem;
+    border: 5px solid black;
+    background: linear-gradient(yellow, brown);
+}
+.rankmember{
+    position: absolute;
+    top: 40rem;
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center;
+    margin-left: 40%;
+    font-size: 2rem;
+    border: 5px solid black;
+    background: linear-gradient(yellow, brown);
+}
 /* ----------------- Création de news ----------------------*/
 .titrenews{
     color : white;
@@ -372,6 +479,35 @@ textarea{
     opacity: 0.9;
 }
 
+/*----------- cookie --------*/
+.cookie-alert {
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    border-radius: 10px;
+    background:#2f2f2f;
+    color:#fff;
+    padding:10px 15px;
+    width:280px;
+    z-index:100;
+ }
+ .cookie-alert a { 
+    display:block;
+    text-align: center;
+    padding:5px 10px;
+    margin:8px auto 0 auto;
+    border-radius: 10px;
+    background:transparent;
+    border: 2px solid #bb1d1d;
+    color:rgb(187, 115, 32);
+    transition: all .3s ease;
+ }
+    .cookie-alert a:hover {
+       background: rgb(211, 198, 18);
+       color:#1a1919;
+    }
+
+
 /*----------- Responsive -----------*/
 
 @media screen and (max-width: 768px) {
@@ -421,3 +557,12 @@ textarea{
     }
 
 }
+@media only screen and (max-width:480px) {
+    .cookie-alert {
+       text-align: center;
+       left: 0; right: 0;;
+         margin: 0 auto;
+       max-width:700px;
+       padding:10px 30px;
+    }
+ }

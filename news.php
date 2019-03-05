@@ -1,7 +1,7 @@
 <?php
 include './include/header.php';
 ?>
-<div id="main"></div>
+<div id="main">
 
    <div class="page">
    <h2>Bienvenue sur les archives de la Drunken Chocobo</h2>
@@ -10,10 +10,15 @@ include './include/header.php';
 
           <?php include 'new.php' ?>
         </div>
-        </div>
+   </div>
+   <div class="archive">
+      <a href="#">Septembre 2018</a><br>
+      <a href="#">Octobre 2018</a><br>
+      <a href="#">Novembre 2018</a><br>  
+      <a href="#">Décembre 2018</a><br>
+      <a href="#">Janvier 2019</a><br>
+   </div>
 </div>
-
-
 
 
 

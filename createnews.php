@@ -2,6 +2,7 @@
 session_start();
 require './include/functions.php';
 include './include/header.php';
+admin_only();
 ?>
 <?php
         
@@ -36,12 +37,12 @@ include './include/header.php';
 }
 ?>
             <div class="titrenews">
-                <label for="title">Titre</label><br />
+                <label for="title" class="createtitle">Titre</label><br />
                 <input type="text" id="title" name="title" />
             </div>
             <div class="contenunews">
-                <label for="content">Contenu</label><br />
-                <textarea id="content" name="content" wrap="off" cols="30" rows="30"></textarea>
+                <label for="content" class="createcontent">Contenu</label><br />
+                <textarea id="content" name="content" wrap="off" cols="30" rows="30" class="createarea"></textarea>
             </div>
             <div class="subbutton">
                <button type="submit">Poster</button>

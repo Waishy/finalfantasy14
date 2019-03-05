@@ -1,11 +1,18 @@
 <?php 
 include './include/header.php'
 ?>
-
+<?php
+if(isset($_COOKIE['accept_cookie'])) {
+   $showcookie = false;
+} else {
+   $showcookie = true;
+}
+require_once('index.php');
+?>
 
 <div id="main">
     <div class="marquee">
-        <p>Une bonne année et de joyeuses fêtes les copains bourrés</p>
+        <p>Une bonne année et de joyeuses fêtes les copains</p>
     </div>
     <div class="page">
         <div class="header_art">Bienvenue chez Drunken Chocobo</div>
@@ -19,12 +26,17 @@ include './include/header.php'
     Pour plus d'infos : <a href="https://fr.finalfantasyxiv.com/lodestone/">Le site officiel du jeu</a> </p>
             <img src="./images/back.png" alt="" class="art-ilu">
         </div>
+        <div class='morenews'><a href="news.php">Plus de news --></a></div>
     </div>
     <iframe class="api" src="https://discordapp.com/widget?id=305349187669590017&theme=dark" width="225" height="400"
         allowtransparency="true" frameborder="0"></iframe>
 
-    <div class="archive"></div>
-
+    <div class="img_serv"><a href="./membre.php"><img src="./images/moogle.png" alt="serveur"></a></div>
+    <?php if($showcookie) { ?>
+    <div class="cookie-alert">
+   En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des contenus et services adaptés à vos centres d’intérêts.<br /><a href="include/cookie.php">OK</a>
+</div>
+<?php } ?>
 </div>
 <?php 
 include './include/footer.php'
