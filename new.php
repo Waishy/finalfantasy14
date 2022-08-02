@@ -1,4 +1,4 @@
-<?php
+ <?php
 require './include/db.php';
 $req = $pdo->query('SELECT * FROM news');
 while ($data = $req->fetch()):
