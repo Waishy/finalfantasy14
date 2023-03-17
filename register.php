@@ -85,7 +85,11 @@ if (!empty($_POST)) {
             </div>
             <div class="radiobut">
 
-    <input type="radio" id="admin" name="utilisateur" class="radiobut" value="1">
+    <input type="radio" id="admin" name="utilisateur" class="radiobut" value="deuxmains">
+    <input type="radio" name="utilisateur" id="" value="unemain">
+    <input type="radio" name="utilisateur" id="" value="distance>
+    <input type="radio" name="utilisateur" id="" value="magie">
+    <input type="radio" name="utilisateur" id="" value="unemain">
     <label class="radiobut" for="admin">Administrateur</label>
 
 </div>

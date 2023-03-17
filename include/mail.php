@@ -7,11 +7,11 @@
     $objet = 'Candidature';
 
     $headers = 'MIME-Version: 1.0 . "\n"; // Version MIME';
-    $headers .= 'content-type: text/html; charset=ISO-8859-1 . "\n"; // l\'en-tête Content-type pour le format HTML';
+    $headers .= 'content-type: text/html; charset=utf-8 . "\n"; // l\'en-tête Content-type pour le format HTML';
 
     $message = '
     
-    Bonjour je me nomme '.$_POST['Pseudo'].'!
+     Bonjour je me nomme '.$_POST['Pseudo'].'!
     Je suis sur le monde '.$_POST['Monde'].'!
     J\'ai '.$_POST['age'].'! et je souhaite rejoindre votre CL car je cherche à '.$_POST['activite'].'!
     Je joue '.$_POST['classe'].'! et j\'aime la '.$_POST['biere'].'!
